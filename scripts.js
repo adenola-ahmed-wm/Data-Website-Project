@@ -7,16 +7,16 @@ google.setOnLoadCallback(drawBasic);
 function drawBasic() {
 
     var data = google.visualization.arrayToDataTable([
-        ['Rappers', 'Net Worth',],
-        [' Dr Dre', 810000000],
-        ['P Diddy', 730000000],
-        ['Jay-Z', 650000000],
-        ['Russell Simons', 340000000],
-        ['Master P', 250000000]
+        ['Rappers', 'Net Worth', {role: 'style'}],
+        [' Dr Dre', 810000000, 'color: black'],
+        ['P Diddy', 730000000, 'color: silver'],
+        ['Jay-Z', 650000000, 'color:blue'],
+        ['Russell Simons', 340000000, 'color:gold'],
+        ['Master P', 250000000, 'color: green']
     ]);
 
     var options = {
-        title: 'Population of Largest U.S. Cities',
+        title: 'Top 5 Rappers Net Worths',
         chartArea: {width: '50%'},
         hAxis: {
             title: 'Net Worth in millions',
