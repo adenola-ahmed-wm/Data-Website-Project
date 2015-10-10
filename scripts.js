@@ -1,6 +1,7 @@
 /**
  * Created by session2 on 10/9/15.
  */
+alert("Hello");
 google.load('visualization', '1', {packages: ['corechart', 'bar']});
 google.setOnLoadCallback(drawBasic);
 
