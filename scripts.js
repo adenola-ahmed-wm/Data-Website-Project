@@ -43,8 +43,8 @@ function drawBasic2() {
         ['Herp Alpert', 850000000, 'color: pink' ],
         ['Madonna', 800000000, 'color: #BEF781'],
         ['Celine Dion', 630000000, 'color: goldenrod'],
-        ['Mariah Carey', 520000000],
-        ['Dolly Parton', 500000000]
+        ['Mariah Carey', 520000000, 'color: yellow'],
+        ['Dolly Parton', 500000000, 'color: darkblue']
     ]);
 
     var options = {
