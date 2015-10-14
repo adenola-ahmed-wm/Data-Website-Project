@@ -39,10 +39,10 @@ google.setOnLoadCallback(drawBasic2);
 function drawBasic2() {
 
     var data = google.visualization.arrayToDataTable([
-        ['Singers', 'Net Worth'],
-        ['Herp Alpert', 850000000],
-        ['Madonna', 800000000],
-        ['Celine Dion', 630000000],
+        ['Singers', 'Net Worth', {role: 'style'}],
+        ['Herp Alpert', 850000000, 'color: pink' ],
+        ['Madonna', 800000000, 'color: #BEF781'],
+        ['Celine Dion', 630000000, 'color: goldenrod'],
         ['Mariah Carey', 520000000],
         ['Dolly Parton', 500000000]
     ]);
