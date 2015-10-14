@@ -32,3 +32,34 @@ function drawBasic() {
 
     chart.draw(data, options);
 }
+
+google.load('visualization', '1', {packages: ['corechart', 'bar']});
+google.setOnLoadCallback(drawBasic2);
+
+function drawBasic2() {
+
+    var data = google.visualization.arrayToDataTable([
+        ['Singers', 'Net Worth'],
+        ['Herp Alpert', 850000000],
+        ['Madonna', 800000000],
+        ['Celine Dion', 630000000],
+        ['Mariah Carey', 520000000],
+        ['Dolly Parton', 500000000]
+    ]);
+
+    var options = {
+        title: 'Top 5 Singers Net Worth',
+        chartArea: {width: '50%'},
+        hAxis: {
+            title: 'Net Worth in Millions',
+            minValue: 0
+        },
+        vAxis: {
+            title: 'Singers'
+        }
+    };
+
+    var chart = new google.visualization.BarChart(document.getElementById('chart_div2'));
+
+    chart.draw(data, options);
+}
