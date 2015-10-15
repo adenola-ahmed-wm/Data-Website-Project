@@ -2,6 +2,11 @@
  * Created by session2 on 10/9/15.
  */
 alert("Hello");
+var page = prompt("Are you ready to view the page");
+if(page == "yes")
+alert("Let's go.");
+else
+alert("Ok bye.");
 google.load('visualization', '1', {packages: ['corechart', 'bar']});
 google.setOnLoadCallback(drawBasic);
 
