@@ -6,7 +6,7 @@ var page = prompt("Are you ready to view the page");
 if(page == "yes")
 alert("Let's go.");
 else
-alert("Ok bye.");
+alert("Oh well here's the page anyway.");
 google.load('visualization', '1', {packages: ['corechart', 'bar']});
 google.setOnLoadCallback(drawBasic);
 
